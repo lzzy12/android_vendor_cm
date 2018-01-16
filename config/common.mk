@@ -172,11 +172,19 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
+# Launcher
+
+ifeq ($(WITH_LAUNCHER), Trebuchet)
+PRODUCT_PACKAGES += \
+	Trebuchet
+
+endif
+
+
 # Custom CM packages
 PRODUCT_PACKAGES += \
     ResurrectionOTA \
     ResurrectionStats \
-    Trebuchet \
     AudioFX \
     CMFileManager \
     Eleven \
