@@ -180,13 +180,11 @@ PRODUCT_PACKAGES += \
 
 endif
 
-
 # Custom CM packages
 PRODUCT_PACKAGES += \
     ResurrectionOTA \
     ResurrectionStats \
     AudioFX \
-    CMFileManager \
     Eleven \
     LockClock \
     CMSettingsProvider \
