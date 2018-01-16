@@ -32,6 +32,10 @@ PRODUCT_BOOTANIMATION := vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTAN
 endif
 endif
 
+ifeq ($(USE_GEN_BOOTANIMATION), true)
+PRODUCT_BOOTANIMATION := vendor/cm/prebuilt/common/bootanimation/bootanimation.zip
+endif
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
